@@ -1,0 +1,346 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FCE9569C-3508-4541-80EE-9822A1589921}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Parcial_2</RootNamespace>
+    <AssemblyName>Parcial 2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44367</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bootstrap\Css\bootstrap-grid.css" />
+    <Content Include="Bootstrap\Css\bootstrap-grid.min.css" />
+    <Content Include="Bootstrap\Css\bootstrap-grid.rtl.css" />
+    <Content Include="Bootstrap\Css\bootstrap-grid.rtl.min.css" />
+    <Content Include="Bootstrap\Css\bootstrap-reboot.css" />
+    <Content Include="Bootstrap\Css\bootstrap-reboot.min.css" />
+    <Content Include="Bootstrap\Css\bootstrap-reboot.rtl.css" />
+    <Content Include="Bootstrap\Css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Bootstrap\Css\bootstrap-utilities.css" />
+    <Content Include="Bootstrap\Css\bootstrap-utilities.min.css" />
+    <Content Include="Bootstrap\Css\bootstrap-utilities.rtl.css" />
+    <Content Include="Bootstrap\Css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Bootstrap\Css\bootstrap.css" />
+    <Content Include="Bootstrap\Css\bootstrap.min.css" />
+    <Content Include="Bootstrap\Css\bootstrap.rtl.css" />
+    <Content Include="Bootstrap\Css\bootstrap.rtl.min.css" />
+    <Content Include="Bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Bootstrap\js\bootstrap.esm.js" />
+    <Content Include="Bootstrap\js\bootstrap.esm.min.js" />
+    <Content Include="Bootstrap\js\bootstrap.js" />
+    <Content Include="Bootstrap\js\bootstrap.min.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="DefaultA.aspx" />
+    <Content Include="DefaultP.aspx" />
+    <Content Include="Imagenes\2.jpg" />
+    <Content Include="Imagenes\books-icon.png" />
+    <Content Include="Imagenes\1.jpg" />
+    <Content Include="Imagenes\school.png" />
+    <Content Include="Imagenes\Teacher-icon.png" />
+    <Content Include="Imagenes\fon.jpeg" />
+    <Content Include="Login.aspx" />
+    <Content Include="Palumnos.aspx" />
+    <Content Include="PalumnosP.aspx" />
+    <Content Include="PasiganarC.aspx" />
+    <Content Include="PasignarP.aspx" />
+    <Content Include="Pcurso.aspx" />
+    <Content Include="PlistadoA.aspx" />
+    <Content Include="PnotasA.aspx" />
+    <Content Include="Pprofesor.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clasgeneral.cs" />
+    <Compile Include="DataSet\BDescuela.cs">
+      <DependentUpon>BDescuela.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\BDescuela.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDescuela.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultA.aspx.cs">
+      <DependentUpon>DefaultA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultA.aspx.designer.cs">
+      <DependentUpon>DefaultA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultP.aspx.cs">
+      <DependentUpon>DefaultP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultP.aspx.designer.cs">
+      <DependentUpon>DefaultP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Palumnos.aspx.cs">
+      <DependentUpon>Palumnos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Palumnos.aspx.designer.cs">
+      <DependentUpon>Palumnos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PalumnosP.aspx.cs">
+      <DependentUpon>PalumnosP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PalumnosP.aspx.designer.cs">
+      <DependentUpon>PalumnosP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pamaster.Master.cs">
+      <DependentUpon>Pamaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pamaster.Master.designer.cs">
+      <DependentUpon>Pamaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PasiganarC.aspx.cs">
+      <DependentUpon>PasiganarC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasiganarC.aspx.designer.cs">
+      <DependentUpon>PasiganarC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasignarP.aspx.cs">
+      <DependentUpon>PasignarP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasignarP.aspx.designer.cs">
+      <DependentUpon>PasignarP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pcurso.aspx.cs">
+      <DependentUpon>Pcurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pcurso.aspx.designer.cs">
+      <DependentUpon>Pcurso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlistadoA.aspx.cs">
+      <DependentUpon>PlistadoA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlistadoA.aspx.designer.cs">
+      <DependentUpon>PlistadoA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pmaster.Master.cs">
+      <DependentUpon>Pmaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pmaster.Master.designer.cs">
+      <DependentUpon>Pmaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PnotasA.aspx.cs">
+      <DependentUpon>PnotasA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PnotasA.aspx.designer.cs">
+      <DependentUpon>PnotasA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ppmaster.Master.cs">
+      <DependentUpon>Ppmaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ppmaster.Master.designer.cs">
+      <DependentUpon>Ppmaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pprofesor.aspx.cs">
+      <DependentUpon>Pprofesor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pprofesor.aspx.designer.cs">
+      <DependentUpon>Pprofesor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bootstrap\Css\bootstrap-grid.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap-grid.min.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap-grid.rtl.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap-reboot.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap-reboot.min.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap-utilities.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap-utilities.min.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap.min.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap.rtl.css.map" />
+    <Content Include="Bootstrap\Css\bootstrap.rtl.min.css.map" />
+    <Content Include="Bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="Bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Bootstrap\js\bootstrap.esm.js.map" />
+    <Content Include="Bootstrap\js\bootstrap.esm.min.js.map" />
+    <Content Include="Bootstrap\js\bootstrap.js.map" />
+    <Content Include="Bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="DataSet\BDescuela.xsc">
+      <DependentUpon>BDescuela.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet\BDescuela.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BDescuela.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="DataSet\BDescuela.xss">
+      <DependentUpon>BDescuela.xsd</DependentUpon>
+    </Content>
+    <None Include="packages.config" />
+    <Content Include="Pmaster.Master" />
+    <Content Include="Pamaster.Master" />
+    <Content Include="Ppmaster.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64018</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44367/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

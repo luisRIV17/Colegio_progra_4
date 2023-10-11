@@ -1,0 +1,142 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Pamaster.master.cs" Inherits="Parcial_2.Pamaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Alumno</title>
+     <style>
+          .im{
+           width:50px;
+           height:40px;
+          padding-top:0px;
+            padding-bottom:10px;
+        }
+        .bod{
+           /* background:#ebedf0;*/
+           background-color:#ebedf0 !important ;
+           font-family: sans-serif;
+        }
+        .men{
+           background:#434faa !important;
+          width:100%;
+          color:white;
+          position:fixed;
+        }
+        
+        .titu2{
+            padding-top:3px;
+            
+        }
+        .bb {
+            text-decoration:none;
+        color:#b6ff00;
+           font-size:0.8em;
+        }
+         .bb2 {
+        text-decoration:none;
+          font-size:1em;
+         
+         
+        }
+         .sti{
+                text-decoration:none;
+				padding:15px 12px;
+				display:block;
+                text-align: center;
+         }
+        .bodd
+        {
+             margin:0;
+              padding:0;
+              background:url(Imagenes/2.jpg) center center  no-repeat   fixed;
+             
+              background-size:cover;
+              font-family:sans-serif;
+              background-size:cover;
+        }
+        ul, ol {
+				list-style:none;
+                text-align: center;
+			}
+        
+        .nav > li {
+				float:left;
+			}
+        .nav li a {
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+                font-size:1.3em;
+            
+			}
+        .nav li a:hover {
+				background-color:#1b1717;
+			}
+        .nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+                background:#0e0d0d;
+                 border-radius:10px;
+			}
+        
+        .nav li:hover > ul {
+				display:block;
+                padding:15px;
+        text-decoration: none;
+         background:black;
+			}
+        .nav li ul li {
+				position:relative;
+                
+			}   
+			.sub{
+                font-size:0.7em;
+			}
+			
+    </style>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Bootstrap/Css/bootstrap.min.css" type="text/css" />
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="bodd">
+    <form id="form1" runat="server">
+        <div class="  men">
+             <div class="row  justify-content-center ">
+                 <div class="col-10 text-start titu2">
+                      <ul class="nav">
+                        <li><a href="DefaultA.aspx">  <img class="im" src="Imagenes/school.png" ></a></li>
+				        <li><a href=#>Cursos</a>
+					        <ul class="sub">
+						        <li><a href="PasiganarC.aspx">Asignacion</a></li>
+                                <li><a href="PnotasA.aspx">Notas</a></li>
+					        </ul>
+				        </li>
+			          </ul>
+                </div>
+                  <div class=" col-2 justify-content-center text-end  ">
+                     <ul class="nav">
+                        <li><a href="#"> <asp:Label ID="lbnombre" CssClass="bb" runat="server"  Text="Nombre"></asp:Label> </a>
+                        <ul class="sub">
+						        <li><a href="Login.aspx">Salir</a></li>
+					        </ul>
+                            </li>
+                          <li class="sti"><asp:Label ID="lbnivel" CssClass="bb2" runat="server" Text="Nivel"></asp:Label></li>
+                   </ul>
+                   
+                 </div>
+                 
+              </div>   
+          </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

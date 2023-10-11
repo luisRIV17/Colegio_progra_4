@@ -1,0 +1,16 @@
+Parcial 2 Usuraios
+
+Administrador
+Usuario=luiss
+contraseña=123
+
+Profesro
+Usuario=vlad
+contraseña=123
+
+Alumno
+Usuario=oli
+contraseña=123
+
+http://luisrf-001-site1.itempurl.com
+ 
